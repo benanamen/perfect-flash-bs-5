@@ -1,0 +1,46 @@
+{
+    "name": "krubio/perfect-flash-bs-5",
+    "description": "SOLID Compliant Session Based Flash Messaging - Bootstrap 5",
+    "keywords": [
+        "Flash",
+        "Flash Message",
+        "Session Flash Messaging",
+        "Bootstrap 5"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Rubio",
+            "email": "ducatikevin@yahoo.com",
+            "homepage": "https://github.com/benanamen/perfect-flash-bs-5",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.1.0",
+        "krubio/perfect-session": "^0.1.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-asserts": "*",
+        "phpstan/phpstan": "^1.10",
+        "vimeo/psalm": "^5.12",
+        "nunomaduro/phpinsights": "^2.8",
+        "codeception/module-phpbrowser": "*"
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/codecept run --coverage --coverage-html  --coverage-xml"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "PerfectApp\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
